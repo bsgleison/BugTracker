@@ -23,6 +23,8 @@ import javax.persistence.Id;
 public class Status extends BaseObject {
 
     private Long id;
+
+    @org.hibernate.search.annotations.Field(index = Index.YES)
     private String description;
 
 // --------------------- GETTER / SETTER METHODS ---------------------
@@ -37,7 +39,7 @@ public class Status extends BaseObject {
     public void setId(Long id) {
         this.id = id;
     }
-    @org.hibernate.search.annotations.Field
+    @org.hibernate.search.annotations.Field(index = Index.YES)
     public String getDescription() {
         return description;
     }

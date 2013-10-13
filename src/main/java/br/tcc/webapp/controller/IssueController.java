@@ -42,7 +42,8 @@ public class IssueController {
     }
 
     //@RequestMapping(method = RequestMethod.GET)
-    public ModelAndView handleRequest(@RequestParam(required = false, value = "q") String query, HttpServletRequest request) throws Exception {
+    @RequestMapping("/issuesBusca")
+    public ModelAndView issuesBusca(@RequestParam(required = false, value = "q") String query, HttpServletRequest request) throws Exception {
         Model model = new ExtendedModelMap();
         try {
             model.addAttribute("issueList", issueManager.search(query));

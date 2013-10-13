@@ -44,7 +44,7 @@
     <h2><fmt:message key='issueList.heading'/></h2>
 
 
-    <form method="get" action="${ctx}/issuesByUser" id="searchForm" class="form-search">
+    <form method="get" action="${ctx}/issuesBusca" id="searchForm" class="form-search">
 
         <div id="search" class="input-append">
 

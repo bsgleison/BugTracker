@@ -1,8 +1,11 @@
 package br.tcc.webapp.model;
 
+import org.apache.lucene.document.Field;
 import org.appfuse.model.BaseObject;
 import org.appfuse.model.User;
+import org.hibernate.search.annotations.Index;
 import org.hibernate.search.annotations.Indexed;
+
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -22,6 +25,7 @@ public class Issue extends BaseObject {
 // ------------------------------ FIELDS ------------------------------
 
     private Long id;
+    @org.hibernate.search.annotations.Field(index = Index.YES)
     private String summary;
     private String description;
     private Departament departament;
@@ -67,7 +71,7 @@ public class Issue extends BaseObject {
     public void setDepartament(Departament departament) {
         this.departament = departament;
     }
-
+    @org.hibernate.search.annotations.Field(index = Index.YES)
     public String getDescription() {
         return description;
     }
@@ -119,7 +123,7 @@ public class Issue extends BaseObject {
     public void setProject(Project project) {
         this.project = project;
     }
-
+    @org.hibernate.search.annotations.Field(index = Index.YES)
     public String getSummary() {
         return summary;
     }
