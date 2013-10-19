@@ -295,9 +295,6 @@
             <button type="submit" class="btn" name="cancel">
                 <i class="icon-remove"></i> <fmt:message key="button.cancel"/>
             </button>
-            <button type="submit" class="btn" name="cancel">
-                <i class="icon-remove"></i> <fmt:message key="button.cancel"/>
-            </button>
             <button type="button" class="btn btn-primary" name="videoConf" id="videoConf">
                 <i class="icon-facetime-video icon-white"></i> <fmt:message key="button.videoConference"/>
             </button>
