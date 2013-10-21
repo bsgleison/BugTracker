@@ -343,8 +343,11 @@
     });
 
     function openVideoConference() {
-        var url = "/issues/videoConference/" + ${issue.id};
-        window.open(url);
+        var issueId = '${issue.id}';
+        if (issueId != '') {
+            var url = "/issues/videoConference/" + issueId;
+            window.open(url);
+        }
     }
 
     var hash;

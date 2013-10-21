@@ -1,6 +1,6 @@
 <%@ include file="/common/taglibs.jsp" %>
 <head>
-    <script src='https://swww.tokbox.com/webrtc/v2.0/js/TB.min.js'></script>
+    <script type="text/javascript" src="<c:url value="/scripts/TB.js"/>"></script>
 </head>
 
 
